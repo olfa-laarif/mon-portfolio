@@ -3,6 +3,7 @@ import arrowIcon from './arrow-icon.png';
 import logo from './logo.png';
 import menuBlack from './menu-black.png';
 import moonIcon from './moon_icon.png';
+import closeBlack from './close-black.png';
 
 
 export const assets={
@@ -11,4 +12,5 @@ export const assets={
  logo,
  menuBlack,
  moonIcon,
+ closeBlack
 }
