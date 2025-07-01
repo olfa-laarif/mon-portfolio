@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='  text-center mx-auto h-screen flex flex-col items-center justify-center gap-3' style={{
+    <div className='text-center mx-auto h-screen flex flex-col items-center justify-center gap-3' style={{
     background: 'linear-gradient(135deg, #f0f8ff, #f6fff8)', // dégradé très clair bleu/vert
   }} >
        <h3 className='text-xl md:text-2xl mb-3 font-Ovo' >Olfa LAARIF</h3>

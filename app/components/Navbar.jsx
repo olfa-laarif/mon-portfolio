@@ -18,7 +18,7 @@ const Navbar = () => {
 
   useEffect(()=>{
    window.addEventListener('scroll',()=>{
-    if(screenY > 50){
+    if(scrollY > 50){
       setIsScroll(true);
     } else{
       setIsScroll(false);
@@ -29,11 +29,12 @@ const Navbar = () => {
   return (
    <>
 
-   <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50'>
+   <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center 
+    justify-between z-50 ${isScroll?" bg-white bg-opacity-50 backdrop-blur-lg shadow-sm":""}`}>
     <a href='#Top'><Image src={assets.logo} alt="Logo"   height={112} width={112} 
-    className='rounded-full object-cover cursor-pointer p-2 mr-14'  priority/></a>
-    <ul className='hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white
-    shadow-sm '>
+    className='rounded-full object-cover cursor-pointer p-2 mr-14 "'  priority/></a>
+    <ul className={`hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll?"":" bg-white shadow-sm bg-opacity-50"}
+    `}>
         <li><a className='font-Ovo' href='#Top'>Acceuil</a></li>
         <li><a className='font-Ovo' href='#about'>À propos</a></li>
         <li><a className='font-Ovo' href='#skills'>Compétences</a></li>
