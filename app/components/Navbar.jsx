@@ -21,8 +21,8 @@ const Navbar = () => {
    <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50'>
     <a href='#Top'><Image src={assets.logo} alt="Logo"   height={112} width={112} 
     className='rounded-full object-cover cursor-pointer p-2 mr-14'  priority/></a>
-    <ul className='hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-slate-300 
-    shadow-sm bg-opacity-30'>
+    <ul className='hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white
+    shadow-sm '>
         <li><a className='font-Ovo' href='#Top'>Acceuil</a></li>
         <li><a className='font-Ovo' href='#about'>À propos</a></li>
         <li><a className='font-Ovo' href='#skills'>Compétences</a></li>
