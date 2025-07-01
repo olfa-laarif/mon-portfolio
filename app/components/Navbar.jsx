@@ -1,11 +1,12 @@
 'use client';
 
-import { assets } from '@/assets/assets'
-import Image from 'next/image'
-import React, { useRef } from 'react'
+import { assets } from '@/assets/assets';
+import Image from 'next/image';
+import React, { useEffect, useRef ,useState} from 'react';
 
 const Navbar = () => {
 
+  const [isScroll,setIsScroll]=useState(false);
   const sideMenuRef=useRef();
 
   const openMenu=()=>{
@@ -14,6 +15,16 @@ const Navbar = () => {
   const closeMenu=()=>{
     sideMenuRef.current.style.transform='translateX(16rem)';
   }
+
+  useEffect(()=>{
+   window.addEventListener('scroll',()=>{
+    if(screenY > 50){
+      setIsScroll(true);
+    } else{
+      setIsScroll(false);
+    }
+   })
+  },[])
   
   return (
    <>

@@ -10,7 +10,7 @@ const ovo = Ovo({
 });
 
 export const metadata = {
-  title: "Olfa LAARIF - Développeuse Fullstack",
+  title: "Portfolio - Olfa LAARIF",
   description: "",
 };
 
